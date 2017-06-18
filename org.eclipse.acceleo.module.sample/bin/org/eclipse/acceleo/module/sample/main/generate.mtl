@@ -1,0 +1,14 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.xtext.org/dsl/granja/granja')]
+
+
+[template public generateElement(aGranja : Granja)]
+[comment @main/]
+[file (aGranja.nombreGranja, false, 'UTF-8')]
+[for (it : Dispositivos | dispositivos)]
+ Dispositivo:[it.nombre/] 
+accion:[it.accion.nombreAccion/]
+[/for]
+
+[/file]
+[/template]

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<granja:Granja xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:granja="http://www.xtext.org/dsl/granja/granja" nombreGranja="Benito">
+  <login usuario="Benito" contrasena="beni"/>
+  <dispositivos codigo="CODI1" temperatura="">
+    <accion nombreAccion="SACAR" descripcion="Abrir la camara">
+      <numero idNumero="10"/>
+    </accion>
+  </dispositivos>
+  <dispositivos codigo="CODI2" nombre="BARRERA_SEGURIDAD">
+    <accion/>
+  </dispositivos>
+  <dispositivos codigo="CODI3" nombre="ROTURA_CRISTAL" temperatura="">
+    <accion nombreAccion="ESTADO" descripcion=""/>
+  </dispositivos>
+  <dispositivos codigo="CODI4" nombre="ROTURA_CRISTAL">
+    <accion nombreAccion="ESTADO" descripcion="Estado del cristal"/>
+  </dispositivos>
+  <dispositivos codigo="CODI5" nombre="TEMPERATURA" temperatura="AMBIENTE">
+    <accion nombreAccion="ESTADO" descripcion="Estado de la temperatura ambiente"/>
+  </dispositivos>
+  <dispositivos codigo="CODI6" nombre="INUNDACION" temperatura="">
+    <accion nombreAccion="ESTADO" descripcion="Estado de la inundacion"/>
+  </dispositivos>
+  <dispositivos codigo="CODI7" nombre="ESTACION_METEOROLOGICA">
+    <accion nombreAccion="ESTADO" descripcion="Estado de la estacion"/>
+  </dispositivos>
+  <dispositivos codigo="CODI8" nombre="CO2">
+    <accion nombreAccion="ESTADO" descripcion="Estado del co2"/>
+  </dispositivos>
+  <dispositivos codigo="CODI9" nombre="DEPOSITO_LECHE">
+    <accion nombreAccion="ESTADO" descripcion="Estado del depositito de leche"/>
+  </dispositivos>
+  <dispositivos codigo="CODI10" nombre="EMERGENCIA">
+    <accion nombreAccion="ESTADO" descripcion="Estado del sensor de emergencia"/>
+  </dispositivos>
+  <dispositivos codigo="CODI11" nombre="FUEGO_HUMO">
+    <accion nombreAccion="ESTADO" descripcion="Estado del fuego y el humo"/>
+  </dispositivos>
+  <dispositivos codigo="CODI12" nombre="ROBOT_LIMPIADOR">
+    <accion nombreAccion="ACTIVAR" descripcion="Activar el robot de limpieza"/>
+  </dispositivos>
+  <dispositivos codigo="CODI13" nombre="PULSOMETRO_GANADO">
+    <accion nombreAccion="ESTADO" descripcion="Estado del pulsometro"/>
+  </dispositivos>
+  <dispositivos codigo="CODI14" nombre="MECEDORA">
+    <accion nombreAccion="DESACTIVAR" descripcion="Desactivar la mecedora"/>
+  </dispositivos>
+  <dispositivos codigo="CODI15" nombre="TEMPERATURA" temperatura="MECEDORA">
+    <accion nombreAccion="ESTADO" descripcion="Temperatura de la mecedora"/>
+  </dispositivos>
+  <dispositivos codigo="CODI16" nombre="INFRARROJOS">
+    <accion nombreAccion="APAGAR" descripcion="Apagar el sensor de infrarrojos"/>
+  </dispositivos>
+  <dispositivos codigo="CODI17" nombre="LUMINOSIDAD">
+    <accion nombreAccion="APAGAR" descripcion="apagar las luces"/>
+  </dispositivos>
+  <dispositivos codigo="CODI18" nombre="NEVERAS">
+    <accion nombreAccion="ENCENDER" descripcion="Encender las neveras"/>
+  </dispositivos>
+  <dispositivos codigo="CODI19" nombre="VIENTO">
+    <accion nombreAccion="ESTADO" descripcion="Estado del viento"/>
+  </dispositivos>
+  <dispositivos codigo="CODI20" nombre="RADIOFRECUENCIA">
+    <accion nombreAccion="ACTIVAR" descripcion="Activar la radiofrecuencia"/>
+  </dispositivos>
+  <dispositivos codigo="CODI21" nombre="LLUVIA">
+    <accion nombreAccion="ESTADO" descripcion="Estado de la lluvia"/>
+  </dispositivos>
+  <dispositivos codigo="CODI22" nombre="SISTEMA_IDENTIFICACION" temperatura="">
+    <accion nombreAccion="DESACTIVAR" descripcion="Desactivar dispositivo de identificacion"/>
+  </dispositivos>
+  <dispositivos codigo="CODI23" nombre="LUZ" temperatura="">
+    <accion nombreAccion="AUMENTAR" descripcion="aumentar la luz en 10">
+      <numero idNumero="10" datos="VOLTIOS"/>
+    </accion>
+  </dispositivos>
+  <dispositivos codigo="CODI24" nombre="TERMOSTATO">
+    <accion nombreAccion="DISMINUIR" descripcion="Disminuir el termostato en 23,5 grados">
+      <numero idNumero="23,5" datos="GRADOS"/>
+    </accion>
+  </dispositivos>
+  <dispositivos/>
+  <dispositivos/>
+  <dispositivos/>
+  <dispositivos/>
+  <dispositivos>
+    <accion nombreAccion="SACAR">
+      <numero idNumero="34"/>
+    </accion>
+  </dispositivos>
+</granja:Granja>

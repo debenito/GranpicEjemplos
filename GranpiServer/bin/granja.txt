@@ -1,0 +1,66 @@
+ nombre:BENI1 centralita:DELAVAL
+usuario:DOS 
+contraseña: nueva
+Dispositivo: BARRERA_SEGURIDAD 
+codigo: CODI1	
+accion: ABRIR  
+	
+	
+Dispositivo: BARRERA_SEGURIDAD 
+codigo: CODI2	
+accion: ABRIR  
+	
+	
+Dispositivo: ROTURA_CRISTAL 
+codigo: CODI3	
+accion: ESTADO  
+	
+	
+Dispositivo: ROTURA_CRISTAL 
+codigo: CODI4	
+accion: ESTADO  
+	
+	
+Dispositivo: ROTURA_CRISTAL 
+codigo: CODI5	
+accion: ESTADO  
+	
+	
+Dispositivo: ROTURA_CRISTAL 
+codigo: CODI6	
+accion: ESTADO  
+	descripcion:  ESTADO el/la ROTURA_CRISTAL
+	
+	
+Dispositivo: TEMPERATURA 
+codigo: CODI7	
+accion: ESTADO 
+temperatura : AMBIENTE 
+	descripcion:  ESTADO el/la TEMPERATURA
+	
+	
+Dispositivo: CAMARA 
+codigo: CODI8	
+accion: SACAR  
+numero: 10 datos:FOTOS
+	descripcion:  SACAR10 FOTOS del CAMARA
+	
+	
+Dispositivo: BARRERA_SEGURIDAD 
+codigo: CODI9	
+accion: ABRIR  
+	descripcion:  ABRIR el/la BARRERA_SEGURIDAD
+	
+	
+Dispositivo: INUNDACION 
+codigo: CODI10	
+accion: ESTADO  
+	descripcion:  ESTADO el/la INUNDACION
+	
+	
+Dispositivo: ESTACION_METEOROLOGICA 
+codigo: CODI11	
+accion: ESTADO  
+	descripcion:  ESTADO el/la ESTACION_METEOROLOGICA
+	
+	

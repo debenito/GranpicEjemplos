@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="granja" version="12.0.0.2017041100">
+  <ownedViewpoints name="granja" modelFileExtension="granja">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Diagrama Granja" initialisation="true" domainClass="granja::Granja" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="Login" domainClass="granja::login">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="15" labelExpression="feature:usuario" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/granja.design/icons/usuario.GIF">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='chocolate']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Dispositivos" domainClass="granja::Dispositivos">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="20" labelExpression="feature:nombre" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/granja.design/icons/dispositivos.GIF">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <labelFormat>italic</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Numero" domainClass="granja::numero">
+          <style xsi:type="style:SquareDescription" labelSize="10" labelExpression="feature:idNumero" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Accion" domainClass="granja::accion">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="20" labelExpression="feature:nombreAccion" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/granja.design/icons/acciones.GIF">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="RDISPOSITIVO_ACCION" sourceMapping="//@ownedViewpoints[name='granja']/@ownedRepresentations[name='Diagrama%20Granja']/@defaultLayer/@nodeMappings[name='Dispositivos']" targetMapping="//@ownedViewpoints[name='granja']/@ownedRepresentations[name='Diagrama%20Granja']/@defaultLayer/@nodeMappings[name='Accion']" targetFinderExpression="feature:accion">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="RACTION_NUMERO" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='granja']/@ownedRepresentations[name='Diagrama%20Granja']/@defaultLayer/@nodeMappings[name='Accion']" targetMapping="//@ownedViewpoints[name='granja']/@ownedRepresentations[name='Diagrama%20Granja']/@defaultLayer/@nodeMappings[name='Numero']" targetFinderExpression="feature:numero">
+          <style sourceArrow="OutputFillClosedArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="DISPOSITIVO" nodeMappings="//@ownedViewpoints[name='granja']/@ownedRepresentations[name='Diagrama%20Granja']/@defaultLayer/@nodeMappings[name='Dispositivos']" iconPath="/granja.design/icons/dispositivos.GIF">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="granja.Dispositivos" referenceName="dispositivos"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="USUARIO" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='granja']/@ownedRepresentations[name='Diagrama%20Granja']/@defaultLayer/@nodeMappings[name='Login']" iconPath="/granja.design/icons/usuario.GIF">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="granja.login" referenceName="login"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ACCION" nodeMappings="//@ownedViewpoints[name='granja']/@ownedRepresentations[name='Diagrama%20Granja']/@defaultLayer/@nodeMappings[name='Accion']" iconPath="/granja.design/icons/acciones.GIF">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="granja.accion" referenceName="tipos_acciones"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="NUMERO" nodeMappings="//@ownedViewpoints[name='granja']/@ownedRepresentations[name='Diagrama%20Granja']/@defaultLayer/@nodeMappings[name='Numero']" iconPath="/granja.design/icons/tipo.GIF">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="granja.numero" referenceName="tipos_numeros"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="CDISPOSITIVO_ACCION" edgeMappings="//@ownedViewpoints[name='granja']/@ownedRepresentations[name='Diagrama%20Granja']/@defaultLayer/@edgeMappings[name='RDISPOSITIVO_ACCION']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="accion" valueExpression="[target/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="CACCION_NUMERO" edgeMappings="//@ownedViewpoints[name='granja']/@ownedRepresentations[name='Diagrama%20Granja']/@defaultLayer/@edgeMappings[name='RACTION_NUMERO']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="numero" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="granja.design.Services"/>
+  </ownedViewpoints>
+</description:Group>
