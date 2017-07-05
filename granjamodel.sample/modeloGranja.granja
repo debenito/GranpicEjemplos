@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <granja:Granja xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:granja="http://www.xtext.org/dsl/granja/granja" nombreGranja="Benito">
-  <login usuario="Benito" contrasena="beni"/>
+  <login usuario="DOS" contrasena="nueva"/>
   <dispositivos codigo="CODI1" temperatura="">
     <accion nombreAccion="SACAR" descripcion="Abrir la camara">
       <numero idNumero="10"/>
@@ -79,10 +79,6 @@
       <numero idNumero="23,5" datos="GRADOS"/>
     </accion>
   </dispositivos>
-  <dispositivos/>
-  <dispositivos/>
-  <dispositivos/>
-  <dispositivos/>
   <dispositivos>
     <accion nombreAccion="SACAR">
       <numero idNumero="34"/>

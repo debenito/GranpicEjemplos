@@ -1,0 +1,10 @@
+gratext.client
+gratext.client.gráficos
+gratext.client.parser
+gratext.client.parser.xml
+gratext.server
+gratext.server.dispositivos
+gratext.server.dispositivos.acciones
+gratext.server.dispositivos.sensores
+gratext.server.lector
+gratext.server.lector.xml
